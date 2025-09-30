@@ -60,8 +60,10 @@ p  { font-size: 14px; line-height: 1.5; }
 
 /* Task 1 */
 .boxes {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: stacked */
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .box {
@@ -81,21 +83,17 @@ transition: background 0.5s;
 }
 
 /* Tablet: show two columns */
-@media (min-width: 600px) and (max-width: 991px) {
-      .boxes {
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-        gap: 12px;
+@media (min-width: 600px) {
+  .boxes {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 /* Desktop: show three columns */
-    @media (min-width: 992px) {
-      .boxes {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-      }
-    }
+@media (min-width: 900px) {
+  .boxes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 
