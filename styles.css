@@ -87,7 +87,7 @@ transition: background 0.5s;
 
 
 /* Tablet: show two columns */
-@media (min-width: 600px) {
+@media (min-width: 768pxpx) {
   .boxes {
     grid-template-columns: 1fr 1fr;
   }
@@ -102,6 +102,7 @@ transition: background 0.5s;
         gap: 20px;
       }
     }
+
 
 
 
