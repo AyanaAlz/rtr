@@ -79,6 +79,12 @@ transform: scale(1.03);
 background: #e6e6e6;
 transition: background 0.5s;
 }
+@media (max-width: 600px) {
+  .boxes{
+    grid-template-columns: (repeat, 1fr);
+  }
+}
+
 
 /* Tablet: show two columns */
 @media (min-width: 600px) {
@@ -96,6 +102,7 @@ transition: background 0.5s;
         gap: 20px;
       }
     }
+
 
 
 
